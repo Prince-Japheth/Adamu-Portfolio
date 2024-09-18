@@ -1,0 +1,759 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Adamu's Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Normal style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	<style>
+		.skillss {
+			padding: 0 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.skillss .animate-box {
+			flex: 1 1 calc(33.333% - 40px);
+			/* Three items per row with some spacing */
+			margin: 20px;
+			box-sizing: border-box;
+		}
+
+		@media (max-width: 992px) {
+			.skillss .animate-box {
+				flex: 1 1 calc(50% - 40px);
+				/* Two items per row */
+			}
+
+			.slides {
+				margin-top: 70px;
+			}
+		}
+
+		@media (max-width: 576px) {
+			.skillss .animate-box {
+				flex: 1 1 calc(50% - 20px);
+				/* Two items per row on mobile */
+				margin: 10px;
+				/* Adjust margin for smaller screens */
+			}
+		}
+
+		.skillss div {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+
+		.skillss div img {
+			width: 100px;
+		}
+
+		.skillss div h3 {
+			font-size: medium;
+		}
+
+		/* Style the button */
+		#backToTopBtn {
+			display: none;
+			/* Hidden by default */
+			position: fixed;
+			/* Fixed/sticky position */
+			bottom: 20px;
+			/* Place the button 20px from the bottom */
+			right: 30px;
+			/* Place the button 30px from the right */
+			z-index: 99;
+			/* Make sure it does not overlap */
+			border: none;
+			/* Remove borders */
+			outline: none;
+			/* Remove outline */
+			background-color: #555;
+			/* Set a background color */
+			color: white;
+			/* Text color */
+			cursor: pointer;
+			/* Add a mouse pointer on hover */
+			padding: 15px;
+			/* Some padding */
+			border-radius: 10px;
+			/* Rounded corners */
+			font-size: 20px;
+		}
+
+		#backToTopBtn:hover {
+			background-color: #333;
+			/* Add a dark-grey background on hover */
+		}
+	</style>
+
+</head>
+
+<body>
+	<ion-icon name="arrow-up-outline" id="backToTopBtn"></ion-icon>
+	<div id="adamu-page">
+		<div class="container-wrap">
+			<a href="#" class="js-adamu-nav-toggle adamu-nav-toggle" data-toggle="collapse" data-target="#navbar"
+				aria-expanded="false" aria-controls="navbar"><i></i></a>
+			<aside id="adamu-aside" role="complementary" class="border js-fullheight">
+				<div class="text-center">
+					<div class="author-img" style="background-image: url(images/about.jpg);"></div>
+					<h1 id="adamu-logo"><a href="index.html">Adamu</a></h1>
+					<span class="position"><a href="#">Computer Software Engineer</a> in Nigeria</span>
+				</div>
+				<nav id="adamu-main-menu" role="navigation" class="navbar">
+					<div id="navbar" class="collapse">
+						<ul>
+							<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+							<li><a href="#" data-nav-section="about">About</a></li>
+							<li><a href="#" data-nav-section="skills">Skills</a></li>
+							<li><a href="#" data-nav-section="education">Education</a></li>
+							<li><a href="#" data-nav-section="experience">Experience</a></li>
+							<li><a href="#" data-nav-section="work">Projects</a></li>
+							<li><a href="#" data-nav-section="contact">Contact</a></li>
+						</ul>
+					</div>
+				</nav>
+
+				<br><br><br>
+
+				<div class="adamu-footer">
+					<p><small>&copy;
+
+							Copyright
+							<script>document.write(new Date().getFullYear());</script> All rights reserved. Made with <i
+								class="icon-heart" aria-hidden="true"></i> by <a href="https://adamu.com"
+								target="_blank">adamu</a>
+
+							</span>
+						</small></p>
+					<ul>
+						<li><a href="#"><i class="icon-facebook2"></i></a></li>
+						<li><a href="#"><i class="icon-twitter2"></i></a></li>
+						<li><a href="#"><i class="icon-instagram"></i></a></li>
+						<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+					</ul>
+				</div>
+
+			</aside>
+
+			<div id="adamu-main">
+				<section id="adamu-hero" class="js-fullheight" data-section="home">
+					<div class="flexslider js-fullheight">
+						<ul class="slides">
+							<li
+								style="background-image: url('https://images.unsplash.com/photo-1582736317407-371893d9e146?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+								<div class="overlay"></div>
+								<div class="container-fluid">
+									<div class="row">
+										<div
+											class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+											<div class="slider-text-inner js-fullheight">
+												<div class="desc"
+													style="background: rgba(255, 255, 255, 0.574); border-radius: 10px; backdrop-filter: blur(10px); padding: 20px; border: 1px solid rgba(255, 255, 255, 0.18); color: white;">
+													<h1>Hello! <br>I'm Adamu</h1>
+													<h2>A full-stack developer and forex trader.</h2>
+													<p><a class="btn btn-primary btn-learn">Download CV <i
+																class="icon-download4"></i></a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li
+								style="background-image: url('https://images.unsplash.com/photo-1579403124614-197f69d8187b?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+								<div class="overlay"></div>
+								<div class="container-fluid">
+									<div class="row">
+										<div
+											class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+											<div class="slider-text-inner">
+												<div class="desc"
+													style="background: rgba(255, 255, 255, 0.844); border-radius: 10px; backdrop-filter: blur(10px); padding: 20px; border: 1px solid rgba(255, 255, 255, 0.18); color: white;">
+													<h1>I'm Adamu</h1>
+													<h2>
+														Public speaker passionate about building efficient and scalable
+														web applications.
+														<br>
+														with a diverse skill set in both front-end and back-end
+														development, I strive to deliver high-quality solutions that
+														meet client needs.
+													</h2>
+													<p><a class="btn btn-primary btn-learn">Download CV <i
+																class="icon-download4"></i></a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="adamu-about" data-section="about">
+					<div class="adamu-narrow-content">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+									<div class="col-md-12">
+										<div class="about-desc">
+											<span class="heading-meta">About Me</span>
+											<h2 class="adamu-heading">Who Am I?</h2>
+											<p><strong>Hi, I'm Adamu</strong> I am a full-stack developer, forex trader,
+												and public speaker. I am passionate about building efficient and
+												scalable web applications. With expertise in both front-end and back-end
+												development, I deliver high-quality solutions tailored to client needs.
+												My skills include HTML, CSS, JavaScript, React, Node.js, Express, and
+												MongoDB.</p>
+											<p>My unique blend of technical and financial knowledge, along with my
+												public speaking experience, allows me to approach problem-solving
+												creatively and effectively.</p>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="row">
+									<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+										<div class="hire">
+											<h2>I am happy to know you <br>that 300+ projects done sucessfully!</h2>
+											<a href="#" class="btn-hire">Hire me</a>
+										</div>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="adamu-skills" data-section="skills">
+					<div class="adamu-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">My Specialty</span>
+								<h2 class="adamu-heading animate-box">My Skills</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<p>I possess a diverse skill set in both front-end and back-end development, enabling me
+									to build efficient and scalable web applications. My technical expertise is
+									complemented by strong analytical skills and effective communication abilities,
+									ensuring that I deliver high-quality solutions tailored to client needs.</p>
+							</div>
+
+							<br>
+
+							<div class="skillss">
+								<div class="animate-box" data-animate-effect="fadeInLeft">
+									<img src="./images/reactjs.png" alt="">
+									<h3>React.Js</h3>
+								</div>
+								<div class="animate-box" data-animate-effect="fadeInUp">
+									<img src="./images/php.png" alt="">
+									<h3>Php</h3>
+								</div>
+								<div class="animate-box" data-animate-effect="fadeInRight">
+									<img src="./images/html.png" alt="">
+									<h3>HTML</h3>
+								</div>
+								<div class="animate-box" data-animate-effect="fadeInLeft">
+									<img src="./images/css.png" alt="">
+									<h3>CSS</h3>
+								</div>
+								<div class="animate-box" data-animate-effect="fadeInUp">
+									<img src="./images/js.png" alt="">
+									<h3>JavaScript</h3>
+								</div>
+								<div class="animate-box" data-animate-effect="fadeInRight">
+									<img src="./images/react-native.png" alt="">
+									<h3>React Native</h3>
+								</div>
+								<div class="animate-box" data-animate-effect="fadeInLeft">
+									<img src="./images/laravel.png" alt="">
+									<h3>Laravel</h3>
+								</div>
+							</div>
+
+
+
+							<!-- <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>React.Js</h3>
+									<div class="progress">
+										<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
+											aria-valuemin="0" aria-valuemax="100" style="width:75%">
+											<span>75%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>Laravel</h3>
+									<div class="progress">
+										<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
+											aria-valuemin="0" aria-valuemax="100" style="width:60%">
+											<span>60%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>HTML5</h3>
+									<div class="progress">
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
+											aria-valuemin="0" aria-valuemax="100" style="width:85%">
+											<span>85%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>CSS</h3>
+									<div class="progress">
+										<div class="progress-bar color-1" role="progressbar" aria-valuenow="85"
+											aria-valuemin="0" aria-valuemax="100" style="width:85%">
+											<span>85%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>PHP</h3>
+									<div class="progress">
+										<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+											aria-valuemin="0" aria-valuemax="100" style="width:90%">
+											<span>90%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>JavaScript</h3>
+									<div class="progress">
+										<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+											aria-valuemin="0" aria-valuemax="100" style="width:70%">
+											<span>70%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>React Native</h3>
+									<div class="progress">
+										<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+											aria-valuemin="0" aria-valuemax="100" style="width:80%">
+											<span>80%</span>
+										</div>
+									</div>
+								</div>
+							</div> -->
+
+						</div>
+					</div>
+				</section>
+
+				<section class="adamu-education" data-section="education">
+					<div class="adamu-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">Education</span>
+								<h2 class="adamu-heading animate-box">Education</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<div class="fancy-collapse-panel">
+									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingOne">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion"
+														href="#collapseOne" aria-expanded="true"
+														aria-controls="collapseOne">Bachelor of Science in Computer
+														Science
+													</a>
+												</h4>
+											</div>
+											<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+												aria-labelledby="headingOne">
+												<div class="panel-body">
+													<div class="row">
+														<div class="col-md-6">
+															<p>Currently pursuing a Bachelor of Science in Computer
+																Science at Lincoln University. Started in July 2023,
+																focusing on software development, data structures,
+																algorithms, and computer systems.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="adamu-experience" data-section="experience">
+					<div class="adamu-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">Experience</span>
+								<h2 class="adamu-heading animate-box">Work Experience</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="timeline-centered">
+									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+										<div class="timeline-entry-inner">
+
+											<div class="timeline-icon color-1">
+												<i class="icon-pen2"></i>
+											</div>
+
+											<div class="timeline-label">
+												<h2><a href="#">Lead front-end Developer, Safekan Startup</a>
+													<span>2023-Present</span>
+												</h2>
+												<p>Lead the Safekan startup, improving communication and energy within
+													the team.</p>
+											</div>
+										</div>
+									</article>
+
+
+									<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+										<div class="timeline-entry-inner">
+											<div class="timeline-icon color-2">
+												<i class="icon-pen2"></i>
+											</div>
+											<div class="timeline-label">
+												<h2><a href="#">Full-Stack Developer</a>
+													<!-- <span>Date</span> -->
+												</h2>
+												<p>Worked on various projects, building efficient and scalable web
+													applications.</p>
+											</div>
+										</div>
+									</article>
+
+									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+										<div class="timeline-entry-inner">
+											<div class="timeline-icon color-3">
+												<i class="icon-pen2"></i>
+											</div>
+											<div class="timeline-label">
+												<h2><a href="#">Web Developer, Qafams Tech Fusion</a>
+													<!-- <span>Date</span> -->
+												</h2>
+											</div>
+										</div>
+									</article>
+
+									<!-- <article class="timeline-entry begin animate-box"
+										data-animate-effect="fadeInBottom">
+										<div class="timeline-entry-inner">
+											<div class="timeline-icon color-none">
+											</div>
+										</div>
+									</article> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="adamu-work" data-section="work">
+					<div class="adamu-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">Projects</span>
+								<h2 class="adamu-heading animate-box">Recent Work</h2>
+							</div>
+						</div>
+						<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-12">
+								<p class="work-menu">
+									<span><a href="#">Web Design</a></span> <span><a href="#">Software</a></span>
+									<span><a href="#">Apps</a></span>
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<div class="project"
+									style="background-image: url('https://media.licdn.com/dms/image/D4D22AQGCmgpNM1V8-g/feedshare-shrink_800/0/1719338430301?e=1723680000&v=beta&t=NvxVcPHQKYbIRD692UxzJjqwOdHPEkLfukDTIOLrE2Q');">
+									<div class="desc">
+										<div class="con">
+											<h3><a href="">School Management System</a></h3>
+											<span>Developed a comprehensive school management system facilitating
+												communication between HODs, lecturers, and students.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<!-- <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="project" style="background-image: url(images/img-2.jpg);">
+									<div class="desc">
+										<div class="con">
+											<h3><a href="work.html">Work 02</a></h3>
+											<span>Animation</span>
+											<p class="icon">
+												<span><a href="#"><i class="icon-share3"></i></a></span>
+												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+												<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+								<div class="project" style="background-image: url(images/img-3.jpg);">
+									<div class="desc">
+										<div class="con">
+											<h3><a href="work.html">Work 03</a></h3>
+											<span>Illustration</span>
+											<p class="icon">
+												<span><a href="#"><i class="icon-share3"></i></a></span>
+												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+												<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
+								<div class="project" style="background-image: url(images/img-4.jpg);">
+									<div class="desc">
+										<div class="con">
+											<h3><a href="work.html">Work 04</a></h3>
+											<span>Application</span>
+											<p class="icon">
+												<span><a href="#"><i class="icon-share3"></i></a></span>
+												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+												<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="project" style="background-image: url(images/img-5.jpg);">
+									<div class="desc">
+										<div class="con">
+											<h3><a href="work.html">Work 05</a></h3>
+											<span>Graphic, Logo</span>
+											<p class="icon">
+												<span><a href="#"><i class="icon-share3"></i></a></span>
+												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+												<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="project" style="background-image: url(images/img-6.jpg);">
+									<div class="desc">
+										<div class="con">
+											<h3><a href="work.html">Work 06</a></h3>
+											<span>Web Design</span>
+											<p class="icon">
+												<span><a href="#"><i class="icon-share3"></i></a></span>
+												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+												<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div> -->
+
+						</div>
+						<!-- <div class="row">
+							<div class="col-md-12 animate-box">
+								<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i
+											class="icon-reload"></i></a></p>
+							</div>
+						</div> -->
+					</div>
+				</section>
+
+
+				<section class="adamu-contact" data-section="contact">
+					<div class="adamu-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">Get in Touch</span>
+								<h2 class="adamu-heading">Contact</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-5">
+								<div class="adamu-feature adamu-feature-sm animate-box"
+									data-animate-effect="fadeInLeft">
+									<div class="adamu-icon">
+										<!-- <i class="icon-globe-outline"></i> -->
+										<ion-icon name="mail-outline"></ion-icon>
+									</div>
+									<div class="adamu-text">
+										<p><a href="#">adamu@example.com</a></p>
+									</div>
+								</div>
+
+								<div class="adamu-feature adamu-feature-sm animate-box"
+									data-animate-effect="fadeInLeft">
+									<div class="adamu-icon">
+										<ion-icon name="logo-linkedin"></ion-icon>
+									</div>
+									<div class="adamu-text">
+										<p><a href="#">linkedin.com/in/adamu</a></p>
+									</div>
+								</div>
+
+								<div class="adamu-feature adamu-feature-sm animate-box"
+									data-animate-effect="fadeInLeft">
+									<div class="adamu-icon">
+										<ion-icon name="logo-twitter"></ion-icon>
+									</div>
+									<div class="adamu-text">
+										<p><a href="#">twitter.com/adamu</a></p>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="col-md-7 col-md-push-1">
+								<div class="row">
+									<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box"
+										data-animate-effect="fadeInRight">
+										<form action="">
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Name">
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Email">
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Subject">
+											</div>
+											<div class="form-group">
+												<textarea name="" id="message" cols="30" rows="7" class="form-control"
+													placeholder="Message"></textarea>
+											</div>
+											<div class="form-group">
+												<input type="submit" class="btn btn-primary btn-send-message"
+													value="Send Message">
+											</div>
+										</form>
+									</div>
+
+								</div>
+							</div> -->
+						</div>
+					</div>
+				</section>
+
+			</div><!-- end:adamu-main -->
+		</div><!-- end:container-wrap -->
+	</div><!-- end:adamu-page -->
+
+	<script>
+		// Get the button
+		let mybutton = document.getElementById("backToTopBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () {
+			scrollFunction();
+		};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		mybutton.onclick = function () {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth'
+			});
+		};
+	</script>
+	
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+
+
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
